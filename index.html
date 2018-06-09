@@ -82,6 +82,7 @@
             var recognizer = new window.SpeechRecognition();
             var transcription = document.getElementById('transcription');
             var log = document.getElementById('log');
+	    recognizer.lang = "es-ES";
 
             // Recogniser doesn't stop listening even if the user pauses
             recognizer.continuous = true;

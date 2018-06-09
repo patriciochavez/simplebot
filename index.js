@@ -34,8 +34,8 @@ app.post(/^(.+)$/, function(req, res){
 		console.log(received);
 		if (received.includes("hola")) {
 			res.send("Hola. ¿Como te puedo ayudar?");
-		} else if (received.includes("temperatura") && received.includes("living")) {
-		 	res.send("24 grados");
+		} else if (received.includes("temperatura") && received.includes("actual")) {
+		 	res.send("No exactamente pero en esta época del año debería rondar los 14 grados centígrados");
 		} else {
 			res.send("Perdón, no entiendo");
 			}
