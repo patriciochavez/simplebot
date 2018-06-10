@@ -35,7 +35,7 @@ app.post(/^(.+)$/, function(req, res){
 		if (received.includes("hola")) {
 			res.send("Hola. ¿Como te puedo ayudar?");
 		} else if (received.includes("temperatura") && received.includes("actual")) {
-		 	res.send("No exactamente pero en esta época del año debería rondar los 14 grados centígrados");
+		 	res.send("No se exactamente pero en esta época del año debería rondar los 14 grados centígrados");
 		} else {
 			res.send("Perdón, no entiendo");
 			}
